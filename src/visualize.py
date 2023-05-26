@@ -24,4 +24,4 @@ def display_results(val_dataset, encoder_model, decoder_model, num_examples=5):
         axes[i, 3].imshow(revealed_batch[i])
         axes[i, 3].set_title("Revealed Image")
         axes[i, 3].axis("off")
-    plt.savefig('results/stego.jpg')
+    plt.savefig('results/result.jpg')
