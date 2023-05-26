@@ -6,7 +6,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def main():
-    parser = argparse.ArgumentParser(description='Image steganography Using Deep Learning, train on the cover images and secret images.')
+    parser = argparse.ArgumentParser(description='Testing the decoder using encoded images.')
     parser.add_argument('--en_img_path', type=str, help='The path to the encoded image.')
     parser.add_argument('--decoder_path', type=str, help='The path to decoder model path.')
 
@@ -20,6 +20,7 @@ def main():
 
     # Preprocessing Images
     encoded_img = Image.open(encoded_img_path).convert('RGB').resize((64,64))
+    encoded_img = cover_image = np.array(encoded_img)/255.0
 
     # Adding an extra dimension
     encoded_img = np.expand_dims(encoded_img, axis=0)

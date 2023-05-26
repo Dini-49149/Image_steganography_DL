@@ -6,7 +6,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def main():
-    parser = argparse.ArgumentParser(description='Image steganography Using Deep Learning, train on the cover images and secret images.')
+    parser = argparse.ArgumentParser(description='Testing encoder model using cover and secret images.')
     parser.add_argument('--cv_path', type=str, help='The path to the test cover image.')
     parser.add_argument('--sc_path', type=str, help='The path to the test secret image.')
     parser.add_argument('--encoder_path', type=str, help='The path to encoder model path.')
