@@ -7,8 +7,8 @@ import tensorflow as tf
 
 
 def load_data(cover_images_path, secret_images_path, image_shape=(64, 64)):
-    cover_train_paths = glob.glob(cover_images_path+'*')
-    secret_train_paths = glob.glob(secret_images_path + '*')
+    cover_train_paths = glob.glob(cover_images_path)
+    secret_train_paths = glob.glob(secret_images_path)
 
     cover_images = []
     secret_images = []

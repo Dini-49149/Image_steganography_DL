@@ -38,6 +38,10 @@ def main():
     # Train model
     train_model(combined_model, train_dataset, val_dataset, args.epochs)
 
+    encoder_model.save('models/encoder_model.h5')
+    decoder_model.save('models/decoder_model.h5')
+    combined_model.save('models/combined_model.h5')
+
     # Display results
     display_results(val_dataset, encoder_model, decoder_model)
 
