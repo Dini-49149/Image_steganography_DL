@@ -1,6 +1,20 @@
 # Image Steganography Using Deep Learning
 
-This project aims to conceal a secret image within another image (known as the cover image) using a process known as steganography. The project uses deep learning models for the encoding and decoding processes.
+This project aims to utilize the power of Deep Learning to perform Image Steganography, which is the art of hiding secret information within a cover image. The project employs a simple Convolutional Neural Network (CNN) architecture, implemented in TensorFlow, to hide a secret image inside a cover image, resulting in an encoded image. This encoded image can then be decoded using a similar process to reveal the original secret image.
+
+The model's training and validation processes output a set of four images, labeled as Cover Image, Secret Image, Hidden Image (encoded image), and Revealed Image (decoded image). The results/result.jpg visualizes these images in a single snapshot, facilitating understanding of the process.
+
+![Results Image](results/result.jpg)
+
+
+
+Cover Image: The original cover image that was used to hide the secret image.
+
+Secret Image: The original secret image that was hidden in the cover image.
+
+Hidden Image: The image produced by the encoder model, which is the cover image with the secret image hidden inside.
+
+Revealed Image: The image produced by the decoder model when it tries to extract the secret image from the hidden image.
 
 ## Libraries
 
@@ -42,7 +56,7 @@ pip install -r requirements.txt
 Use the `train.py` script to train the model. You need to provide paths to folders containing cover and secret images, the number of epochs, and the batch size for training.
 
 ```bash
-python train.py --cv_path /path/to/cover_images --sc_path /path/to/secret_images --epochs 50 --batch_size 32
+python train.py --cv_path /path/to/cover_images/ --sc_path /path/to/secret_images/ --epochs 50 --batch_size 32
 ```
 
 2. **Encoding an image**
@@ -64,3 +78,24 @@ python decode.py --en_img_path /path/to/encoded_image.jpg --decoder_path /path/t
 ## Results
 
 The output images will be saved in the `results/` folder. For `visualize.py` and `encode.py`, the output will be saved as `results/result.jpg` and `results/encoded_img.jpg` respectively. For `decode.py`, the output will be saved as `results/reveal_img.jpg`.
+
+
+
+
+
+
+
+
+
+
+
+
+## Contributors
+This project is developed by:
+
+- Dinesh Vennapoosa
+- Sandeep Sirivuri
+- Maddula Krishna Sai Prakash
+- 
+## Contact
+For any inquiries or questions, feel free to reach out to dinesh.vennapoosa@gmail.com
