@@ -77,7 +77,7 @@ python decode.py --en_img_path /path/to/encoded_image.jpg --decoder_path /path/t
 
 ## Results
 
-The output images will be saved in the `results/` folder. For `visualize.py` and `encode.py`, the output will be saved as `results/result.jpg` and `results/encoded_img.jpg` respectively. For `decode.py`, the output will be saved as `results/reveal_img.jpg`.
+The output images will be saved in the `results/` folder. For `train.py` and `encode.py`, the output will be saved as `results/stego.jpg` and `results/encoded_img.jpg` respectively. For `decode.py`, the output will be saved as `results/reveal_img.jpg`.
 
 
 
