@@ -2,19 +2,19 @@
 
 This project aims to utilize the power of Deep Learning to perform Image Steganography, which is the art of hiding secret information within a cover image. The project employs a simple Convolutional Neural Network (CNN) architecture, implemented in TensorFlow, to hide a secret image inside a cover image, resulting in an encoded image. This encoded image can then be decoded using a similar process to reveal the original secret image.
 
-The model's training and validation processes output a set of four images, labeled as Cover Image, Secret Image, Hidden Image (encoded image), and Revealed Image (decoded image). The results/stego.jpg visualizes these images in a single snapshot, facilitating understanding of the process.
+The model's training and validation processes output a set of four images, labeled as Cover Image, Secret Image, Hidden Image (encoded image), and Revealed Image (decoded image). The results/stego.jpg visualizes these images in a single snapshot shown below, facilitating understanding of the process.
 
 ![Results Image](results/stego.jpg)
 
 
 
-        *Cover Image*: The original cover image that was used to hide the secret image.
+        **Cover Image**: The original cover image that was used to hide the secret image.
 
-        *Secret Image*: The original secret image that was hidden in the cover image.
+        **Secret Image**: The original secret image that was hidden in the cover image.
 
-        *Hidden Image*: The image produced by the encoder model, which is the cover image with the secret image hidden inside.
+        **Hidden Image**: The image produced by the encoder model, which is the cover image with the secret image hidden inside.
 
-        *Revealed Image*: The image produced by the decoder model when it tries to extract the secret image from the hidden image.
+        **Revealed Image**: The image produced by the decoder model when it tries to extract the secret image from the hidden image.
 
 ## Libraries
 
