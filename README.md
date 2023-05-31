@@ -8,13 +8,13 @@ The model's training and validation processes output a set of four images, label
 
 
 
-Cover Image: The original cover image that was used to hide the secret image.
+*Cover Image*: The original cover image that was used to hide the secret image.
 
-Secret Image: The original secret image that was hidden in the cover image.
+*Secret Image*: The original secret image that was hidden in the cover image.
 
-Hidden Image: The image produced by the encoder model, which is the cover image with the secret image hidden inside.
+*Hidden Image*: The image produced by the encoder model, which is the cover image with the secret image hidden inside.
 
-Revealed Image: The image produced by the decoder model when it tries to extract the secret image from the hidden image.
+*Revealed Image*: The image produced by the decoder model when it tries to extract the secret image from the hidden image.
 
 ## Libraries
 
