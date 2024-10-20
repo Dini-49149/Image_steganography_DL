@@ -85,4 +85,4 @@ This project is developed by:
 - Maddula Krishna Sai Prakash
 
 ## Contact
-For any inquiries or questions, feel free to reach out to dinesh.vennapoosa@gmail.com
+For any inquiries or questions, feel free to reach out
